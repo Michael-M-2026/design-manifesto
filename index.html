@@ -25,7 +25,6 @@
         position: absolute; /*Sticks itself to its parent .frame. Essentially in another dimension*/
         width: 100%; /*Since the .text lives inside .frame, the width is 100% of the 80%. so they practically cover the same area.*/
         top: 100%; /*Places the .text top directly at the bottom. 0% top-top, 50% top-middle.*/
-      }
 
         /*longhand*/
         animation-name: text-translate; 
@@ -53,7 +52,7 @@
         color: White;
         width: 26ch; /*ch is a relative unit equal to the width of the "0" character of the font. We are using 26 because the header has 26 characters.*/
         overflow: hidden;
-        white-space: nowrap; /*this attribute functions similarly to overflow. When the text reaches the boundaries of its container, the no wrap will make it not wrap vertically underneath it.*/
+        white-space: nowrap; /*this property functions similarly to overflow. When the text reaches the boundaries of its container, the no wrap will make it not wrap vertically underneath it.*/
         border-right: solid; /* border-right is a property that selects the right of the border of the header, and create a solid line. This targets the visual look of it. Other attributes can be dotted, or dashed.*/
         border-right-width: 1.5px; /*defines the weight of the solid border*/
         border-right-color: white; /*defines the color*/
@@ -66,12 +65,12 @@
           blink-caret .5s step-end infinite;
       }
       @keyframes typing {
-        from {width: 0}
-        to {width: 100%}
+        from {width: 0; }
+        to {width: 26ch; }
       }
       @keyframes blink-caret {
-        from, to {border-color: transparent }
-        50% { border-color: white }
+        from, to {border-color: transparent; }
+        50% { border-color: white; }
       }
   
       .text p {
@@ -79,20 +78,18 @@
         font-family: monospace;
         color: Gainsboro;
         line-height: 1.5;
+        margin-top: 40px; /*Margin from header->firstline for readability*/
         opacity: 0;
         
         animation-name: display;
-        animation-duration: 2s
-        animation-timing-function:
-        animation-delay
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: forwards;
-        animation-play-state: running;
+        animation-duration: 2s,
+        animation-timing-function: ease-in,
+        animation-delay 4.5s,
+        animation-iteration-count: 1,
+        animation-direction: normal,
+        animation-fill-mode: forwards,
         
       }
-        
-      
     </style>
       
   </head>
