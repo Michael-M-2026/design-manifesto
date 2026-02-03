@@ -24,7 +24,7 @@
       .text {
         position: absolute; /*Sticks itself to its parent .frame. Essentially in another dimension*/
         width: 100%; /*Since the .text lives inside .frame, the width is 100% of the 80%. so they practically cover the same area.*/
-        top: 100%; /*Places the .text top directly at the bottom. 0% top-top, 50% top-middle.*/
+        text-align: center; /* Places the text at the center of the screen*/
 
         /*longhand*/
         animation-name: text-translate; 
@@ -43,10 +43,10 @@
       }
       @keyframes text-translate {
         from {
-          transform: translateY(0px);
+          transform: translateY(50%); /*50% because it starts at the center*/
         }
         to {
-          transform: translateY(-400px);
+          transform: translateY(200%); /*Text must exit frame*/
         }
       }
     
