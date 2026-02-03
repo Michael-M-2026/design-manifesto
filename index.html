@@ -9,21 +9,23 @@
         text-transform: uppercase;
       }
       .text {
+        
         animation-name: text-translate;
-        animation-duration: 1.0s;
-        animation-timing-function: step-end;
-        animation-delay: 1.0s;
-        animation-iteration-count: 10.0;
+        animation-duration: 24s;
+        animation-timing-function: steps(12);
+        animation-delay: 5.0s;
+        animation-iteration-count: 1;
         animation-direction: normal;
         animation-fill-mode: forwards;
         animation-play-state: running;
+
         }
       @keyframes text-translate {
         from {
           transform: translateY(0px);
         }
         to {
-          transform: translateY(-200px);
+          transform: translateY(-400px);
         }
       }
     
@@ -31,7 +33,6 @@
         font-size: 80px;
         font-family: monospace;
         color: White;
-  
         width: fit-content;
         overflow: hidden;
         border-right: .15px solid white;
