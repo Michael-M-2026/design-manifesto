@@ -43,15 +43,15 @@
       }
       @keyframes text-translate {
         from {
-          transform: translateY(50%); /*50% because it starts at the center*/
+          transform: translateY(-50%); /*50% because it starts at the center*/
         }
         to {
-          transform: translateY(200%); /*Text must exit frame*/
+          transform: translateY(-200%); /*Text must exit frame*/
         }
       }
     
       .text h1 {
-        font-size: 80px;
+        font-size: 30px;
         font-family: monospace;
         color: White;
         width: 26ch; /*ch is a relative unit equal to the width of the "0" character of the font. We are using 26 because the header has 26 characters.*/
@@ -78,7 +78,7 @@
       }
   
       .text p {
-        font-size: 80px;
+        font-size: 30px;
         font-family: monospace;
         color: Gainsboro;
         line-height: 1.5;
