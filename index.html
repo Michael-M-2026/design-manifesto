@@ -1,10 +1,10 @@
 <html>
-  <head>
-    <title>Printing Office</title>
+  <head> 
+    <title>Printing Office</title> 
     <style>
-      body {
+      body { /*the body can be considered the "visual world" that everything lives in, head and title is metaData*/
         background-color: DarkSlateGray;
-        margin: 0;
+        margin: 0px; /*shorthand version: Used to create space, can accept four values top-right-bottom-left, other all.*/
         height: 100vh; /*vh stands for view-port height, used to determine screen size. 100(%)*/
         display: flex; /* This property creates a FLEXBOX which would the program to "fit" the screen. */
         justify-content: center; /* as opposed to a text-align property, justify-content works with FLEXBOX*/
@@ -14,15 +14,16 @@
 
       }
       .text {
-        
-        animation-name: text-translate; /*longhand*/
-        animation-duration: 24s;
-        animation-timing-function: steps(12);
-        animation-delay: 5.0s;
-        animation-iteration-count: 1;
-        animation-direction: normal;
-        animation-fill-mode: forwards;
-        animation-play-state: running;
+
+        /*longhand*/
+        animation-name: text-translate; 
+        animation-duration: 24s; /*total duration of the timing-function (steps)*/
+        animation-timing-function: steps(12); /*breaks animation into 12 steps*/
+        animation-delay: 5.0s; /*waits 5 seconds before playing*/
+        animation-iteration-count: 1; /*total amount of times it is played(?)*/
+        animation-direction: normal; /*decides if it plays normally, reverse or alternates between itself: normal/reverse/alternate*/
+        animation-fill-mode: forwards; /*whether or not it adopts transformations or goes back to its original form.*/
+        animation-play-state: running; /*on/off*/
 
 
         }
@@ -39,7 +40,7 @@
         font-size: 80px;
         font-family: monospace;
         color: White;
-        width: fit-content;
+        width: fit-content; 
         overflow: hidden;
         border-right: .15px solid white;
         white-space: nowrap;
