@@ -10,7 +10,7 @@
       }
       .text {
         animation-name: text-translate;
-        animation-duration: 0.0s;
+        animation-duration: 1.0s;
         animation-timing-function: step-end;
         animation-delay: 1.0s;
         animation-iteration-count: 10.0;
@@ -19,11 +19,13 @@
         animation-play-state: running;
         }
       @keyframes text-translate {
-        0% {
-          translate: 0px 0px;
-        {
-        100% {
-          translate: 0px -200px;
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-200px);
+        }
+      }
     
       .text h1 {
         font-size: 80px;
@@ -39,7 +41,7 @@
         
         animation:
           typing 3.5s steps(25, end),
-          blink-caret .5s step-end infinite,
+          blink-caret .5s step-end infinite;
       }
       @keyframes typing {
         from {width: 0}
