@@ -19,12 +19,13 @@
         height: 500px; /*defining the height of the frame*/
         position: relative; /*Acts as an anchor to its children, when it moves, they move.*/
         overflow: hidden;
+      }
         
       .text {
         position: absolute; /*Sticks itself to its parent .frame. Essentially in another dimension*/
         width: 100%; /*Since the .text lives inside .frame, the width is 100% of the 80%. so they practically cover the same area.*/
-        top: 100%; /*Places the .text top directly at the bottom. 0% top-top, 50% top-middle.
-        
+        top: 100%; /*Places the .text top directly at the bottom. 0% top-top, 50% top-middle.*/
+      }
 
         /*longhand*/
         animation-name: text-translate; 
@@ -96,7 +97,7 @@
       
   </head>
   <body>
-    <div class="frame"
+    <div class="frame">
       <div class="text">
         <h1>This is a printing office</h1>
         <p>
