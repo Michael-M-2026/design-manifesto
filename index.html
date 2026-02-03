@@ -21,7 +21,8 @@
         letter-spacing: .15em;
         animation:
           typing 3.5s steps(25, end),
-          blink-caret .5s step-end infinite;
+          blink-caret .5s step-end infinite,
+          text-up 3.5s ease-out forwards;
       }
       @keyframes typing {
         from {width: 0}
@@ -31,6 +32,11 @@
         from, to {border-color: transparent }
         50% { border-color: white }
       }
+      @keyframes text-up
+      from {transform: translateY(0); }
+      to {transform: translateY(200px); }
+      }
+      
       p {
         font-size: 35px;
         font-family: monospace;
