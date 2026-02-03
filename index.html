@@ -37,6 +37,10 @@
         animation-play-state: running; /*on/off*/
 
         }
+      @keyframes display {
+        from {opacity:0; }
+        to {opacity: 1; }
+      }
       @keyframes text-translate {
         from {
           transform: translateY(0px);
@@ -82,12 +86,12 @@
         opacity: 0;
         
         animation-name: display;
-        animation-duration: 2s,
-        animation-timing-function: ease-in,
-        animation-delay 4.5s,
-        animation-iteration-count: 1,
-        animation-direction: normal,
-        animation-fill-mode: forwards,
+        animation-duration: 2s;
+        animation-timing-function: ease-in;
+        animation-delay: 4.5s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
         
       }
     </style>
