@@ -5,17 +5,17 @@
       body {
         background-color: DarkSlateGray;
         margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
+        height: 100vh; /*vh stands for view-port height, used to determine screen size. 100(%)*/
+        display: flex; /* This property creates a FLEXBOX which would the program to "fit" the screen. */
+        justify-content: center; /* as opposed to a text-align property, justify-content works with FLEXBOX*/
+        align-items: center; /* Same with Justify-content, allows arrangement with FLEXBOX*/
+        overflow: hidden; /*"overflow is the property that determines what happens content is too big to fit in certain areas."*/
         text-transform: uppercase;
 
       }
       .text {
         
-        animation-name: text-translate;
+        animation-name: text-translate; /*longhand*/
         animation-duration: 24s;
         animation-timing-function: steps(12);
         animation-delay: 5.0s;
