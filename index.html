@@ -3,6 +3,7 @@
     <title>Printing Office</title> 
     <style>
       body { /*the body can be considered the "visual world" that everything lives in, head and title is metaData*/
+        
         background-color: DarkSlateGray;
         margin: 0px; /*shorthand version: Used to create space, can accept four values top-right-bottom-left, other all.*/
         height: 100vh; /*vh stands for view-port height, used to determine screen size. 100(%)*/
@@ -11,8 +12,16 @@
         align-items: center; /* Same with Justify-content, allows arrangement with FLEXBOX*/
         overflow: hidden; /*"overflow is the property that determines what happens content is too big to fit in certain areas."*/
         text-transform: uppercase;
-
+        
       }
+      .frame { /* the "." selects specific CLASS attributes; in this instance selects specific div.*/
+        width: 80%; /*utilizing the FLEXBOX, instead of using margins, we use width since "justify-content" centered it, we are creating a frame in the exact middle." */
+        height: 500px; /*defining the height of the frame*/
+        
+        
+
+        
+    
       .text {
 
         /*longhand*/
@@ -24,7 +33,6 @@
         animation-direction: normal; /*decides if it plays normally, reverse or alternates between itself: normal/reverse/alternate*/
         animation-fill-mode: forwards; /*whether or not it adopts transformations or goes back to its original form.*/
         animation-play-state: running; /*on/off*/
-
 
         }
       @keyframes text-translate {
@@ -83,27 +91,29 @@
       
   </head>
   <body>
-    <div class="text">
-      <h1>This is a printing office</h1>
-      <p>
-      Crossroads of civilization<br>
-      Refuge of all the arts<br>
-      Against the ravages of time<br>
-      Armory of the fearless truth<br>
-      Against whispering rumor<br>
-      Incessant trumpet of trade<br>
-      </p>
-      <p>
-      From this place words may fly abroad<br>
-      Not to perish on waves of sound<br>
-      Not to vary with the writer's hand<br>
-      But fixed in time having been verified in proof<br>
-      </p>
-      <p>
-      Friend you stand on the sacred ground:<br>
-      This is a Printing Office
-      </p>
-    </div>
+    <div class="frame"
+      <div class="text">
+        <h1>This is a printing office</h1>
+        <p>
+        Crossroads of civilization<br>
+        Refuge of all the arts<br>
+        Against the ravages of time<br>
+        Armory of the fearless truth<br>
+        Against whispering rumor<br>
+        Incessant trumpet of trade<br>
+        </p>
+        <p>
+        From this place words may fly abroad<br>
+        Not to perish on waves of sound<br>
+        Not to vary with the writer's hand<br>
+        But fixed in time having been verified in proof<br>
+        </p>
+        <p>
+        Friend you stand on the sacred ground:<br>
+        This is a Printing Office
+        </p>
+      </div>
+  </div>
   </body>
 
 
