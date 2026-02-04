@@ -29,7 +29,7 @@
 
         /*longhand*/
         animation-name: text-translate; 
-        animation-duration: 30s; /*total duration of the timing-function (steps)*/
+        animation-duration: 40s; /*total duration of the timing-function (steps)*/
         animation-timing-function: steps(20); /*breaks animation into 20 steps*/
         animation-delay: 6s; /*waits 6 seconds before playing*/
         animation-iteration-count: 1; /*total amount of times it is played(?)*/
@@ -44,10 +44,10 @@
       }
       @keyframes text-translate {
         from {
-          transform: translateY(-50%); /*50% because it starts at the center*/
+          transform: translateY(0%); /*50% because it starts at the center*/
         }
         to {
-          transform: translateY(-100%); /*Text must exit frame*/
+          transform: translateY(-50%); /*Text must exit frame*/
         }
       }
     
